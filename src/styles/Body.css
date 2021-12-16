@@ -1,5 +1,5 @@
 .header{
-    font-family: Poppins;
+    font-family: Readex Pro;
     font-style: normal;
     font-weight: 800;
     font-size: 44px;
@@ -9,6 +9,7 @@
     padding: 100px; 
     padding-bottom: 0; 
     -webkit-text-stroke: thin;
+    color: #5F5FFF;
 }
 .underline{
     text-decoration: underline;
@@ -21,7 +22,7 @@
     text-decoration-color: #5F5FFF;
 }
 .quote{
-    font-family: Poppins;
+    font-family: Readex Pro;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -47,9 +48,10 @@ button{
     line-height: 30px;
     letter-spacing: 0.01em;
     color: #000000;
-    margin: 8% 16px;
+    margin: 4% 16px;
     margin-left: 0;
     padding: 8px 30px;
+    cursor: pointer; 
 }
 button:hover{
     background: black;
@@ -62,10 +64,10 @@ button:hover{
     width: 30%;
 }
 .title{
-    font-family: Poppins;
+    font-family: Readex Pro;
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 33px;
     
     letter-spacing: 0.02em;
@@ -73,7 +75,7 @@ button:hover{
     color: #000000;
 }
 .description{
-    font-family: Poppins;
+    font-family: Readex Pro;
     font-style: italic;
     font-weight: 500;
     font-size: 20px;
@@ -82,4 +84,8 @@ button:hover{
     letter-spacing: 0.02em;
 
     color: #718096;
+}
+.paragraph{
+    padding: 0 150px;
+    text-align: justify;
 }

@@ -20,6 +20,12 @@ function Nav() {
             <a href="#podcast" class="link">Podcast</a>
           </li>
           <li>
+            <a href="#devices" class="link">Devices</a>
+          </li>
+          <li>
+            <a href="#aboutus" class="link">About Us</a>
+          </li>
+          <li>
             <a href="#demo" class="link">Demo</a>
           </li>
         </ul>
