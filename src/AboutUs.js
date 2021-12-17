@@ -44,14 +44,11 @@ const useStyles = makeStyles({
       }
     }, 
     "&:hover":{
-      filter: "drop-shadow(0px 10px 20px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px rgba(38, 50, 56, 0.08))"
+      filter: "drop-shadow(0px 10px 20px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px rgba(38, 50, 56, 0.08))", 
+      transform: "scale(1.05)"
     }, 
     "& .MuiCardMedia-root": {
-      backgroundPosition: "inherit", 
-      "&:hover": {
-        transform: "scale(1.05)", 
-        overflow: "hidden"
-      }
+      backgroundPosition: "inherit"
     }, 
     "& .MuiTypography-root": {
       fontFamily: "Readex Pro !important"

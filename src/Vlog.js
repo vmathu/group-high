@@ -2,6 +2,7 @@ import './styles/Body.css';
 import vlogImg from './assets/podcast-influencer-illustration_23-2148642929.png'; 
 import YoutubeIcon from "./assets/YoutubeIcon.jsx";
 import TiktokIcon from "./assets/TiktokIcon.jsx"; 
+import FacebookwatchIcon from './assets/FacebookwatchIcon';
 
 function Vlog() {
   return (
@@ -35,6 +36,7 @@ function Vlog() {
           <p>Cuối cùng khi vlog của bạn đã hoàn thành và chỉnh chu nhất thì bạn chỉ còn phải ra mắt nó với công chúng thôi. Vì vlog của bạn sẽ quan trọng cả phần hình ảnh và âm thanh nên bạn không thể chọn các nền tảng như Spotify hay Soundcloud,... mà phải hướng đến những nơi chia sẻ video như Youtube hay TikTok hoặc thậm chí là Facebook và Twitter,... Sau đó thì là xong, bạn có thể chọn ngồi chờ cho video của mình được các thuật toán quảng cáo chạm đến, hoặc bạn có thể tiến 1 bước xa hơn thế nữa, đó chính là chủ động quảng bá cho vlog của mình bằng nhiều cách khác nhau.</p>
           <div style={{display: "flex", alignItems: "center"}}>
             <YoutubeIcon />
+            <FacebookwatchIcon />
             <TiktokIcon />
           </div>
         </div>
