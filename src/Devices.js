@@ -3,7 +3,7 @@ import './styles/Body.css';
 function Devices() {
   return (
     <div id="devices">
-        <h2 class="header" style={{fontSize: 30}}>
+        <h2 class="header" style={{fontSize:28}}>
             Những thiết bị và ứng dụng cần thiết để có thể quay vlog hoặc podcast
         </h2>
         <div class="paragraph">

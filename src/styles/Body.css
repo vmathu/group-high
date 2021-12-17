@@ -89,3 +89,6 @@ button:hover{
     padding: 0 150px;
     text-align: justify;
 }
+svg{
+    padding-right: 1em;
+}

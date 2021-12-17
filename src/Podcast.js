@@ -1,6 +1,9 @@
 import './styles/Body.css'; 
 import podcastImg from './assets/naive-style-podcast-stickers-set_52683-77893.png'
-import YouTubeIcon from '@material-ui/icons/YouTube';
+import YoutubeIcon from './assets/YoutubeIcon.jsx'; 
+import TiktokIcon from './assets/TiktokIcon.jsx'; 
+import SoundcloudIcon from './assets/SoundcloudIcon.jsx'; 
+import SpotifyIcon from './assets/SpotifyIcon';
 
 function Podcast() {
   return (
@@ -32,7 +35,12 @@ function Podcast() {
           <p>Sau khi đã chuẩn bị kĩ về mặt nội dung, tiếp theo là các yếu tố về mặt hình thức. Nếu bạn chọn thể loại podcast có hình thì hình ảnh của bạn khi quay hình lên podcast phải chỉnh chu, phải có sự tôn trọng dành cho người nghe và thể hiện được sự nghiêm túc của công việc. Còn về mặt thu âm thì giọng nói của bạn nên rõ ràng và nên được lọc kỹ các tạp âm. Việc có các tạp âm ồn ào trong podcast của bạn là điều tối kỵ nhất với các podcaster vì nó không chỉ làm giảm đi chất lượng của nội dung bạn thực hiện mà nó còn gây nên sự khó chịu với người nghe. Tổng hợp lại, trước tiên để trở thành một podcaster bạn nên đầu tư một chất lượng hình ảnh và âm thanh ở mức cơ sở (tức là ở cái mức mà người xem không có vấn đề gì với hình ảnh và âm thanh). Sau đó thì việc chọn nâng cấp hơn hay không sẽ phụ thuộc vào độ tăng trưởng của kênh hoặc khả năng của bạn.</p>
           <h4>Đưa video lên nhiều nền tảng (Spotify, Soundcloud, Youtube...)</h4>
 	        <p>Cuối cùng khi podcast  của bạn đã hoàn thành và chỉnh chu nhất thì bạn chỉ còn phải ra mắt nó với công chúng thôi. Tuy nhiên, đối với podcast thì bạn sẽ được rộng rãi hơn trong việc chọn nền tảng của mình tùy vào việc podcast của bạn có quan trọng cả phần tiếng lẫn hình ảnh hay mỗi âm thanh thôi. Do đó bạn có thể chọn cả những nền tảng chia sẻ âm nhạc lẫn video để công khai sản phẩm của mình như Youtube, Spotify, Soundcloud, TikTok,... Sau đó thì là xong, bạn có thể chọn ngồi chờ cho video của mình được các thuật toán quảng cáo chạm đến, hoặc bạn có thể tiến 1 bước xa hơn thế nữa, đó chính là chủ động quảng bá cho vlog của mình bằng nhiều cách khác nhau.</p>
-          
+          <div style={{display: "flex", alignItems: "center"}}>
+            <YoutubeIcon />
+            <SpotifyIcon />
+            <SoundcloudIcon />
+            <TiktokIcon />
+          </div>
         </div>
     </div>
   );

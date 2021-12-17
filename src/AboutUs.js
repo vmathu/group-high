@@ -47,7 +47,11 @@ const useStyles = makeStyles({
       filter: "drop-shadow(0px 10px 20px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px rgba(38, 50, 56, 0.08))"
     }, 
     "& .MuiCardMedia-root": {
-      backgroundPosition: "inherit"
+      backgroundPosition: "inherit", 
+      "&:hover": {
+        transform: "scale(1.05)", 
+        overflow: "hidden"
+      }
     }, 
     "& .MuiTypography-root": {
       fontFamily: "Readex Pro !important"
