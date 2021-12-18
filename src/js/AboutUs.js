@@ -1,15 +1,16 @@
-import React from 'react';
+//@material-ui/core
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import MinhKhoi from './assets/MinhKhoi.jpg'; 
-import HuuPhuc from './assets/HuuPhuc.jpg'; 
-import AnPhong from './assets/AnPhong.png';
-import AnhKhoi from './assets/PhanKhoi.png';
-import AnhThu from './assets/unnamed.png'; 
+
+import MinhKhoi from '../assets/MinhKhoi.jpg'; 
+import HuuPhuc from '../assets/HuuPhuc.jpg'; 
+import AnPhong from '../assets/AnPhong.png';
+import AnhKhoi from '../assets/PhanKhoi.png';
+import AnhThu from '../assets/unnamed.png'; 
 
 const useStyles = makeStyles({
   root: {
@@ -76,7 +77,7 @@ function AboutUs() {
                 Nguyễn Minh Khôi
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                MSSV: 21127081
+                MSSV: 21127081 - Scrum Master
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -93,7 +94,7 @@ function AboutUs() {
                 Diệp Hữu Phúc
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                MSSV: 21127135
+                MSSV: 21127135 - Developer
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -110,7 +111,7 @@ function AboutUs() {
                 Trần Nguyễn An Phong
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                MSSV: 21127004
+                MSSV: 21127004 - Content Writer
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -129,7 +130,7 @@ function AboutUs() {
                 Phan Đặng Anh Khôi
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                MSSV: 21127325
+                MSSV: 21127325 - Content Writer
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -143,10 +144,10 @@ function AboutUs() {
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Võ Minh Anh Thư
+                Võ Minh Anh Thư 
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                MSSV: 21127446
+                MSSV: 21127446 - Developer
               </Typography>
             </CardContent>
           </CardActionArea>

@@ -1,9 +1,9 @@
-import './styles/Body.css'; 
-import podcastImg from './assets/naive-style-podcast-stickers-set_52683-77893.png'
-import YoutubeIcon from './assets/YoutubeIcon.jsx'; 
-import TiktokIcon from './assets/TiktokIcon.jsx'; 
-import SoundcloudIcon from './assets/SoundcloudIcon.jsx'; 
-import SpotifyIcon from './assets/SpotifyIcon';
+import '../styles/Body.css'; 
+import podcastImg from '../assets/naive-style-podcast-stickers-set_52683-77893.png'
+import YoutubeIcon from '../assets/YoutubeIcon.jsx'; 
+import TiktokIcon from '../assets/TiktokIcon.jsx'; 
+import SoundcloudIcon from '../assets/SoundcloudIcon.jsx'; 
+import SpotifyIcon from '../assets/SpotifyIcon';
 
 function Podcast() {
   return (
@@ -20,8 +20,7 @@ function Podcast() {
               <p>Đọc sách, báo, các biển quảng cáo trên đường,... bất kì thứ gì có chữ để nâng cao khả năng đọc truyền cảm của bạn, kết hợp cảm xúc phù hợp với từng loại thông tin khác nhau.</p>
             </div>
             <div style={{alignSelf: "center"}}>
-              <img src={podcastImg} alt="podcastImg" style={{ width: "25em", paddingLeft: "2em" }}
-              />
+              <img src={podcastImg} alt="podcastImg" style={{ width: "25em", paddingLeft: "2em" }} id="podcastImg" />
             </div>
           </div>
           <h3>Làm sao để xây dựng podcast từ con số 0 ?</h3>

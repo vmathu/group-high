@@ -1,7 +1,7 @@
-import './styles/Body.css'; 
-import ellipse from './assets/ellipse.svg'; 
-import image from './assets/image.svg'; 
-import image2 from './assets/image2.svg'; 
+import '../styles/Body.css'; 
+import ellipse from '../assets/ellipse.svg'; 
+import image from '../assets/image.svg'; 
+import image2 from '../assets/image2.svg'; 
 import Info from './Info'; 
 import AboutUs from './AboutUs'; 
 

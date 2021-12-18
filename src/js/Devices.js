@@ -1,11 +1,11 @@
-import './styles/Body.css'; 
+import '../styles/Body.css'; 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import RazerMic from './assets/https___hybrismediaprod.blob.core.windows.net_sys-master-phoenix-images-container_h9a_hd0_9079776083998_seiren-x-black-gallery-1500x1000-01.jpg'; 
-import RodeMic from './assets/01.jpg'; 
+import RazerMic from '../assets/https___hybrismediaprod.blob.core.windows.net_sys-master-phoenix-images-container_h9a_hd0_9079776083998_seiren-x-black-gallery-1500x1000-01.jpg'; 
+import RodeMic from '../assets/01.jpg'; 
 
 const useStyles = makeStyles((theme) => ({
   root: {

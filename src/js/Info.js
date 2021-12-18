@@ -1,5 +1,4 @@
-import React from 'react';
-import './styles/Body.css'; 
+import '../styles/Body.css'; 
 import Vlog from './Vlog';
 import Podcast from './Podcast'; 
 import Devices from './Devices'; 

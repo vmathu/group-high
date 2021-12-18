@@ -1,8 +1,8 @@
-import './styles/Body.css'; 
-import vlogImg from './assets/podcast-influencer-illustration_23-2148642929.png'; 
-import YoutubeIcon from "./assets/YoutubeIcon.jsx";
-import TiktokIcon from "./assets/TiktokIcon.jsx"; 
-import FacebookwatchIcon from './assets/FacebookwatchIcon';
+import '../styles/Body.css'; 
+import vlogImg from '../assets/podcast-influencer-illustration_23-2148642929.png'; 
+import YoutubeIcon from "../assets/YoutubeIcon.jsx";
+import TiktokIcon from "../assets/TiktokIcon.jsx"; 
+import FacebookwatchIcon from '../assets/FacebookwatchIcon';
 
 function Vlog() {
   return (
@@ -13,7 +13,7 @@ function Vlog() {
         <div class="paragraph">
           <div style={{display: "flex"}}>
             <div>
-              <img src={vlogImg} alt="vlogImg" style={{width: "25em"}} />
+              <img src={vlogImg} alt="vlogImg" style={{width: "25em"}} id="vlogImg" />
             </div>
             <div>
               <h3>Làm Vlog dễ hay khó?</h3>

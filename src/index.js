@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Nav from './Nav'; 
-import Body from './Body';
-import Footer from './Footer'; 
+import Nav from './js/Nav';
+import Body from './js/Body';
+import Footer from './js/Footer'; 
 
 ReactDOM.render(
   <React.StrictMode>
