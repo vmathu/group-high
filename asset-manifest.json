@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/group-high/static/css/main.d63be220.chunk.css",
-    "main.js": "/group-high/static/js/main.93d21402.chunk.js",
-    "main.js.map": "/group-high/static/js/main.93d21402.chunk.js.map",
-    "runtime-main.js": "/group-high/static/js/runtime-main.61c2e18a.js",
-    "runtime-main.js.map": "/group-high/static/js/runtime-main.61c2e18a.js.map",
-    "static/js/2.dcac4878.chunk.js": "/group-high/static/js/2.dcac4878.chunk.js",
-    "static/js/2.dcac4878.chunk.js.map": "/group-high/static/js/2.dcac4878.chunk.js.map",
-    "static/js/3.1a052929.chunk.js": "/group-high/static/js/3.1a052929.chunk.js",
-    "static/js/3.1a052929.chunk.js.map": "/group-high/static/js/3.1a052929.chunk.js.map",
+    "main.css": "/group-high/static/css/main.938b015b.chunk.css",
+    "main.js": "/group-high/static/js/main.9251dd53.chunk.js",
+    "main.js.map": "/group-high/static/js/main.9251dd53.chunk.js.map",
+    "runtime-main.js": "/group-high/static/js/runtime-main.12a772f3.js",
+    "runtime-main.js.map": "/group-high/static/js/runtime-main.12a772f3.js.map",
+    "static/js/2.5bb21a0b.chunk.js": "/group-high/static/js/2.5bb21a0b.chunk.js",
+    "static/js/2.5bb21a0b.chunk.js.map": "/group-high/static/js/2.5bb21a0b.chunk.js.map",
+    "static/js/3.f77a82fc.chunk.js": "/group-high/static/js/3.f77a82fc.chunk.js",
+    "static/js/3.f77a82fc.chunk.js.map": "/group-high/static/js/3.f77a82fc.chunk.js.map",
     "index.html": "/group-high/index.html",
-    "static/css/main.d63be220.chunk.css.map": "/group-high/static/css/main.d63be220.chunk.css.map",
-    "static/js/2.dcac4878.chunk.js.LICENSE.txt": "/group-high/static/js/2.dcac4878.chunk.js.LICENSE.txt",
+    "static/css/main.938b015b.chunk.css.map": "/group-high/static/css/main.938b015b.chunk.css.map",
+    "static/js/2.5bb21a0b.chunk.js.LICENSE.txt": "/group-high/static/js/2.5bb21a0b.chunk.js.LICENSE.txt",
     "static/media/01.d9acd760.jpg": "/group-high/static/media/01.d9acd760.jpg",
     "static/media/AnPhong.fd16586e.png": "/group-high/static/media/AnPhong.fd16586e.png",
     "static/media/HuuPhuc.662b9779.jpg": "/group-high/static/media/HuuPhuc.662b9779.jpg",
@@ -27,9 +27,9 @@
     "static/media/unnamed.ee7f5af5.png": "/group-high/static/media/unnamed.ee7f5af5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.61c2e18a.js",
-    "static/js/2.dcac4878.chunk.js",
-    "static/css/main.d63be220.chunk.css",
-    "static/js/main.93d21402.chunk.js"
+    "static/js/runtime-main.12a772f3.js",
+    "static/js/2.5bb21a0b.chunk.js",
+    "static/css/main.938b015b.chunk.css",
+    "static/js/main.9251dd53.chunk.js"
   ]
 }
