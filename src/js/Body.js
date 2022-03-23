@@ -5,7 +5,40 @@ import image2 from '../assets/image2.svg';
 import Info from './Info'; 
 import AboutUs from './AboutUs'; 
 
+import {makeStyles} from '@material-ui/core/styles'; 
+
+const useStyle = makeStyles((theme) => ({
+    iframe: {
+        [theme.breakpoints.up('sm')]: {
+            width: '560px'
+        }
+    }, 
+    bg: {
+        width: '7%', 
+        [theme.breakpoints.down('sm')]: {
+            display: 'none'
+        }
+    }, 
+    image: {
+        width: '30%', 
+        [theme.breakpoints.down('sm')]: {
+            display: 'none'
+        }
+    }, 
+    info: {
+        display: 'flex', 
+        justifyContent: 'center', 
+        textAlign: 'center', 
+        [theme.breakpoints.up('md')]: {
+            justifyContent: 'space-between', 
+            textAlign: 'left'
+        }
+    }
+}))
+
 function Body() {
+    const classes = useStyle(); 
+
   return (
     <div>
         <h1 class="header" style={{color: 'black'}}>
@@ -14,9 +47,9 @@ function Body() {
         <div class="quote">
         Chia sẻ về những hành trang bạn cần chuẩn bị cho bước đầu tiên của mình
         </div>
-        <div class="info">
-            <img src={ellipse} alt="ellipse" class="bg" />
-            <img src={image} alt="image" class="image" />
+        <div className={classes.info}>
+            <img src={ellipse} alt="ellipse" className={classes.bg} />
+            <img src={image} alt="image" className={classes.image} />
             <div style={{alignSelf:"center"}}>
                 <h2 class="title">Tạo vlog / podcast cho riêng mình</h2>
                 <h3 class="description">Bây giờ hoặc không bao giờ</h3>
@@ -27,7 +60,7 @@ function Body() {
                     <button>Start Listening</button>
                 </a>
             </div>
-            <img src={image2} alt="image2" class="bg" />
+            <img src={image2} alt="image2" className={classes.bg} />
         </div>
         <Info />
         <h1 class="header" id="aboutus">About Us</h1>
@@ -41,7 +74,9 @@ function Body() {
                     width="560" 
                     height="315" 
                     allowtransparency="true" 
-                    frameborder="0">
+                    frameborder="0"
+                    className={classes.iframe}
+                >
                 </iframe>
             </div>
         </div>

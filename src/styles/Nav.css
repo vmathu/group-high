@@ -1,16 +1,5 @@
-.page__header{
-    background: #FFFFFF;
-    filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px rgba(38, 50, 56, 0.08));
-    position: fixed; 
-    top: 0;
-    width: 100%;
-    z-index: 5;
-}
 .navbar__menu{
     display: flex;
-}
-img{
-    width: 4vw;
 }
 #logoImg{
     display: unset;
@@ -23,8 +12,8 @@ img{
     align-items: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 3vw;
-    line-height: 30px;
+    font-size: 32px;
+    line-height: 48px;
     letter-spacing: 0.04em;
     padding-left: 40px;
     color: #5F5FFF;
@@ -46,26 +35,6 @@ img{
     padding: 1em; 
     font-family: Poppins;
     font-weight: 600;
-    font-size: 1.5vw;
+    font-size: 16px;
 }
 .link:hover{color: #5F5FFF;}
-#navbar__list{
-    display: none;
-}
-#myMenu{
-    padding: 1em; 
-}
-@media (min-width: 768px) {
-    #navbar__list{
-        display: flex;
-    }
-    #myMenu{
-        display: none; 
-    }
-    img{
-        width: 3vw;
-    }
-    .logo{
-        font-size: 2vw;
-    }
-}

@@ -4,14 +4,32 @@ import YoutubeIcon from '../assets/YoutubeIcon.jsx';
 import TiktokIcon from '../assets/TiktokIcon.jsx'; 
 import SoundcloudIcon from '../assets/SoundcloudIcon.jsx'; 
 import SpotifyIcon from '../assets/SpotifyIcon';
+import { makeStyles } from '@material-ui/core';
+
+const useStyle = makeStyles((theme) => ({
+  paragraph: {
+    padding: '0 20px', 
+    textAlign: 'justify', 
+    [theme.breakpoints.up('sm')]: {
+      padding: '0 80px'
+    }
+  }, 
+  podcastImg: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  }
+}))
 
 function Podcast() {
+  const classes = useStyle();
+
   return (
     <div>
         <h2 class="header" id="podcast">
           Podcast 
         </h2>
-        <div class="paragraph">
+        <div className={classes.paragraph}>
           <div style={{display: "flex"}}>
             <div>
               <h3>Để làm podcast ta cần gì ?</h3>
@@ -20,7 +38,7 @@ function Podcast() {
               <p>Đọc sách, báo, các biển quảng cáo trên đường,... bất kì thứ gì có chữ để nâng cao khả năng đọc truyền cảm của bạn, kết hợp cảm xúc phù hợp với từng loại thông tin khác nhau.</p>
             </div>
             <div style={{alignSelf: "center"}}>
-              <img src={podcastImg} alt="podcastImg" style={{ width: "25em", paddingLeft: "2em" }} id="podcastImg" />
+              <img src={podcastImg} alt="podcastImg" style={{ width: "25em", paddingLeft: "2em" }} className={classes.podcastImg} />
             </div>
           </div>
           <h3>Làm sao để xây dựng podcast từ con số 0 ?</h3>

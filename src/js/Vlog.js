@@ -3,17 +3,40 @@ import vlogImg from '../assets/podcast-influencer-illustration_23-2148642929.png
 import YoutubeIcon from "../assets/YoutubeIcon.jsx";
 import TiktokIcon from "../assets/TiktokIcon.jsx"; 
 import FacebookwatchIcon from '../assets/FacebookwatchIcon';
+import { makeStyles } from '@material-ui/core';
+
+const useStyle = makeStyles((theme) => ({
+  paragraph: {
+    padding: '0 20px', 
+    textAlign: 'justify', 
+    [theme.breakpoints.up('sm')]: {
+      padding: '0 80px'
+    }
+  }, 
+  vlogImg: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  }
+}))
 
 function Vlog() {
+  const classes = useStyle();
+
   return (
     <div>
         <h2 class="header" id="vlog">
             Vlog
         </h2>
-        <div class="paragraph">
+        <div className={classes.paragraph}>
           <div style={{display: "flex"}}>
             <div>
-              <img src={vlogImg} alt="vlogImg" style={{width: "25em"}} id="vlogImg" />
+              <img 
+                src={vlogImg} 
+                alt="vlogImg" 
+                style={{width: "25em"}} 
+                className={classes.vlogImg}
+              />
             </div>
             <div>
               <h3>Làm Vlog dễ hay khó?</h3>

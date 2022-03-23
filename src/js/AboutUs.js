@@ -5,6 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid'; 
 
 import MinhKhoi from '../assets/MinhKhoi.jpg'; 
 import HuuPhuc from '../assets/HuuPhuc.jpg'; 
@@ -58,102 +59,66 @@ const useStyles = makeStyles({
   media: {
     height: 300,
   },
+  grid: {
+    justifyContent: 'center', 
+    textAlign: '-webkit-center'
+  }
 });
 
 function AboutUs() {
   const classes = useStyles();
+
+  const members = [
+    {
+      img: MinhKhoi, 
+      name: 'Nguyễn Minh Khôi', 
+      info: 'MSSV: 21127081 - Scrum Master'
+    }, 
+    {
+      img: HuuPhuc, 
+      name: 'Diệp Hữu Phúc', 
+      info: 'MSSV: 21127135 - Developer'
+    }, 
+    {
+      img: AnPhong, 
+      name: 'Trần Nguyễn An Phong', 
+      info: 'MSSV: 21127004 - Content Writer'
+    }, 
+    {
+      img: AnhKhoi, 
+      name: 'Phan Đặng Anh Khôi', 
+      info: 'MSSV: 21127325 - Content Writer', 
+    }, 
+    {
+      img: AnhThu, 
+      name: 'Võ Minh Anh Thư', 
+      info: 'MSSV: 21127446 - Developer'
+    }
+  ]
   return (
-    <div>
-      <div style={{display: "flex", justifyContent: "space-evenly"}}>
-        <Card className={classes.root}>
-          <CardActionArea>
-            <CardMedia
-              className={classes.media}
-              image={MinhKhoi}
-              title="MinhKhoi"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Nguyễn Minh Khôi
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                MSSV: 21127081 - Scrum Master
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card className={classes.root}>
-          <CardActionArea>
-            <CardMedia
-              className={classes.media}
-              image={HuuPhuc}
-              title="HuuPhuc"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Diệp Hữu Phúc
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                MSSV: 21127135 - Developer
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card className={classes.root}>
-          <CardActionArea>
-            <CardMedia
-              className={classes.media}
-              image={AnPhong}
-              title="AnPhong"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Trần Nguyễn An Phong
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                MSSV: 21127004 - Content Writer
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </div>
-      <div style={{display: "flex", justifyContent: "space-evenly", marginTop: "3em"}}>
-        <Card className={classes.root}>
-          <CardActionArea>
-            <CardMedia
-              className={classes.media}
-              image={AnhKhoi}
-              title="AnhKhoi"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Phan Đặng Anh Khôi
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                MSSV: 21127325 - Content Writer
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card className={classes.root}>
-          <CardActionArea>
-            <CardMedia
-              className={classes.media}
-              image={AnhThu}
-              title="AnhThu"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Võ Minh Anh Thư 
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                MSSV: 21127446 - Developer
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </div>
-    </div>
+    <Grid container spacing={3} className={classes.grid}>
+      {members.map((member) => (
+        <Grid item xs={12} sm={6} md={4}>
+          <Card className={classes.root}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image={member.img}
+                title={member.name}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  {member.name}
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  {member.info}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
   );
 }
 
